@@ -1,0 +1,10 @@
+[gd_scene format=3 uid="uid://q6sod4hvvet1"]
+
+[ext_resource type="Texture2D" uid="uid://2lh4ff2p2v1b" path="res://icon.svg" id="1_ebmjs"]
+
+[node name="Game" type="Node2D" unique_id=1261564797]
+
+[node name="Model" type="Sprite2D" parent="." unique_id=30936230]
+texture_filter = 1
+position = Vector2(402, 348)
+texture = ExtResource("1_ebmjs")
