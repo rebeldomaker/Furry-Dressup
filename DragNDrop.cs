@@ -1,33 +1,40 @@
 using Godot;
-using System;
 
 public partial class DragNDrop : Sprite2D
 {
-	// TODO fix pseudo-code down below:
-	
-	// XXX if the user's cursor is currently dragging clothing item/prop:
-	// if dragging 
-	
+	private bool _isDragging = false;
+	private Vector2 _dragOffset = Vector2.Zero;
+
+	public override void _Process(double delta)
 	{
-		// mouse position
-		// get global mouse position, set vector zero for now and FIXME Later
-		position = global 
+		// If actively dragging, follow the mouse position (accounting for offset)
+		if (_isDragging)
+		{
+			GlobalPosition = GetGlobalMousePosition() - _dragOffset;
+		}
 	}
-	// create a method here
-	public void inputEvent()
+
+	/// <summary>
+	/// Attach this method to the child Area2D's input_event signal in the Godot Inspector.
+	/// </summary>
+	public void _OnArea2DInputEvent(Node viewport, InputEvent @event, long shapeIdx)
 	{
-		// TODO
-		// if event is inputMouseButton
+		if (@event is InputEventMouseButton mouseButtonEvent)
+		{
+			// Check if left mouse button is clicked
+			if (mouseButtonEvent.ButtonIndex == MouseButton.Left)
 			{
-				// if is.pressed
-					{
-						// dragging = True}
-					}
-				// else
-					{
-						dragging = False
-					}
-			
+				if (mouseButtonEvent.Pressed)
+				{
+					_isDragging = true;
+					// Calculate offset so the sprite doesn't awkwardly snap its center to the cursor
+					_dragOffset = GetGlobalMousePosition() - GlobalPosition;
+				}
+				else
+				{
+					_isDragging = false;
+				}
+			}
+		}
 	}
-	
 }
