@@ -1,17 +1,15 @@
 [gd_scene format=3 uid="uid://bi3ivb3evtu61"]
 
-[ext_resource type="Texture2D" uid="uid://2lh4ff2p2v1b" path="res://icon.svg" id="1_mumjo"]
+[ext_resource type="Texture2D" uid="uid://qy2eo8kt1dq5" path="res://assets/furries/SquirrelTufted.png" id="1_mumjo"]
 [ext_resource type="Script" uid="uid://duj28d4sn56v" path="res://DragNDrop.cs" id="2_kwoa3"]
 
 [node name="Sprite2D" type="Sprite2D" unique_id=1928186452 groups=["clothing"]]
-position = Vector2(177, 147)
+position = Vector2(242, 165)
 texture = ExtResource("1_mumjo")
 script = ExtResource("2_kwoa3")
 
 [node name="Area2D" type="Area2D" parent="." unique_id=82365141]
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D" unique_id=642656037]
-
-[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="." unique_id=743974151]
 
 [connection signal="input_event" from="Area2D" to="." method="_on_area_2d_input_event"]
