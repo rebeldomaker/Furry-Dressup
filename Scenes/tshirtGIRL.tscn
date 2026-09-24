@@ -3,9 +3,6 @@
 [ext_resource type="Texture2D" uid="uid://dqvoc5rbka1yi" path="res://assets/clothes/tops/TshirtGIRL.png" id="1_ipx42"]
 [ext_resource type="Script" uid="uid://duj28d4sn56v" path="res://scripts/DragNDrop.cs" id="2_cw4rb"]
 
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_iyaoj"]
-size = Vector2(150, 171)
-
 [node name="T-shirt GIRL Sprite" type="Sprite2D" unique_id=1928186452 groups=["clothing"]]
 position = Vector2(242, 165)
 texture = ExtResource("1_ipx42")
@@ -13,12 +10,7 @@ script = ExtResource("2_cw4rb")
 
 [node name="Area2D" type="Area2D" parent="." unique_id=82365141]
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D" unique_id=642656037]
-visible = false
-position = Vector2(0, 0.5)
-shape = SubResource("RectangleShape2D_iyaoj")
-
-[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Area2D" unique_id=413112747]
+[node name="CollisionPolygon" type="CollisionPolygon2D" parent="Area2D" unique_id=413112747]
 polygon = PackedVector2Array(-75, -28, -68, -43, -63, -57, -56, -65, -49, -68, -46, -71, -41, -73, -35, -80, -29, -85, -27, -76, -22, -70, -18, -68, -7, -67, 4, -68, 15, -76, 20, -81, 20, -86, 31, -81, 56, -70, 61, -63, 68, -49, 69, -40, 75, -30, 76, -28, 72, -27, 62, -20, 53, -16, 47, -14, 43, -19, 42, -22, 39, -13, 39, 5, 38, 9, 45, 20, 53, 35, 59, 50, 58, 54, 50, 64, 44, 68, 40, 72, 27, 80, 22, 83, 17, 83, 7, 86, -14, 86, -25, 84, -27, 84, -28, 79, -31, 65, -32, 49, -34, 42, -37, 39, -38, 36, -38, 27, -42, 22, -44, 9, -45, 3, -49, -3, -52, -7, -53, -19, -55, -22, -62, -25, -66, -27, -71, -28)
 
 [node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="." unique_id=346675944]

@@ -1,9 +1,8 @@
 [gd_scene format=3 uid="uid://q6sod4hvvet1"]
 
-[ext_resource type="Texture2D" uid="uid://qy2eo8kt1dq5" path="res://assets/furries/SquirrelTufted.png" id="1_ebmjs"]
+[ext_resource type="PackedScene" uid="uid://bi3ivb3evtu61" path="res://Scenes/emptyFit.tscn" id="2_qxrlw"]
 
 [node name="Game" type="Node2D" unique_id=1261564797]
 
-[node name="Tufted Squirrel Model" type="Sprite2D" parent="." unique_id=30936230]
-position = Vector2(402, 348)
-texture = ExtResource("1_ebmjs")
+[node name="Tufted Squirrel Model Sprite" parent="." unique_id=1928186452 instance=ExtResource("2_qxrlw")]
+position = Vector2(347, 341)
