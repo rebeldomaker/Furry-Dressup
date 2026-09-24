@@ -5,4 +5,4 @@
 [node name="Game" type="Node2D" unique_id=1261564797]
 
 [node name="Tufted Squirrel Model Sprite" parent="." unique_id=1928186452 instance=ExtResource("2_qxrlw")]
-position = Vector2(347, 341)
+position = Vector2(530, 341)

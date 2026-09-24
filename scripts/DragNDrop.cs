@@ -5,15 +5,17 @@ public partial class DragNDrop : Sprite2D
 { 
 	private bool _isDragging = false; 
 	// if the user's cursor is currently dragging clothing item/prop, defaults to false
+	
 	private Vector2 _dragOffset = Vector2.Zero; 
 	// the distance between where you clicked inside the sprite and the sprite's center point.
 	// NOTE set vector zero for now, maybe change it later
+	
 	public override void _Process(double delta)
-	 {	// override: Tells C# that you are replacing Godot's base_Process method (inherited from Node) with a new custom version.
-
-		// If actively dragging, follow the mouse position (accounting for offset)
+	 {	// override: using C# to replace Godot's base_Process method (inherited from Node) with a new custom-made version.
+		// called every frame, 'delta' is the elapsed time since the previous frame
+		
 		if (_isDragging)
-		{
+		{// If actively dragging, follow the mouse position (accounting for offset)
 			GlobalPosition = GetGlobalMousePosition() - _dragOffset;
 		}
 	}
