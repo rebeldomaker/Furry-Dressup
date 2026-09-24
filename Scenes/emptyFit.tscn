@@ -4,7 +4,7 @@
 [ext_resource type="Script" uid="uid://duj28d4sn56v" path="res://scripts/DragNDrop.cs" id="2_kwoa3"]
 [ext_resource type="PackedScene" uid="uid://crmg7xjf00jy0" path="res://Scenes/tshirtGIRL.tscn" id="3_kwoa3"]
 
-[node name="Sprite2D" type="Sprite2D" unique_id=1928186452 groups=["clothing"]]
+[node name="Tufted Squirrel Model Sprite" type="Sprite2D" unique_id=1928186452 groups=["clothing"]]
 position = Vector2(242, 165)
 texture = ExtResource("1_mumjo")
 script = ExtResource("2_kwoa3")

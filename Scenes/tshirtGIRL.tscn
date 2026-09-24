@@ -6,7 +6,7 @@
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_iyaoj"]
 size = Vector2(150, 171)
 
-[node name="Sprite2D" type="Sprite2D" unique_id=1928186452 groups=["clothing"]]
+[node name="T-shirt GIRL Sprite" type="Sprite2D" unique_id=1928186452 groups=["clothing"]]
 position = Vector2(242, 165)
 texture = ExtResource("1_ipx42")
 script = ExtResource("2_cw4rb")
