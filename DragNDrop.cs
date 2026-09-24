@@ -5,6 +5,7 @@ public partial class DragNDrop : Sprite2D
 	private bool _isDragging = false;
 	private Vector2 _dragOffset = Vector2.Zero;
 
+// override⁠: Tells C# that you are replacing Godot's base ⁠_Process⁠ method (inherited from ⁠Node⁠) with a new custom version.
 	public override void _Process(double delta)
 	{
 		// If actively dragging, follow the mouse position (accounting for offset)
