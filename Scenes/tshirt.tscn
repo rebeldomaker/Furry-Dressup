@@ -1,0 +1,17 @@
+[gd_scene format=3 uid="uid://crmg7xjf00jy0"]
+
+[ext_resource type="Texture2D" uid="uid://dqvoc5rbka1yi" path="res://assets/clothes/tops/TshirtGIRL.png" id="1_jcp7h"]
+[ext_resource type="Script" uid="uid://duj28d4sn56v" path="res://DragNDrop.cs" id="2_6ugt2"]
+
+[node name="Sprite2D" type="Sprite2D" unique_id=1928186452 groups=["clothing"]]
+position = Vector2(242, 165)
+texture = ExtResource("1_jcp7h")
+script = ExtResource("2_6ugt2")
+
+[node name="Area2D" type="Area2D" parent="." unique_id=82365141]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D" unique_id=642656037]
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="." unique_id=346675944]
+
+[connection signal="input_event" from="Area2D" to="." method="_on_area_2d_input_event"]
